@@ -8,7 +8,7 @@ export default function Navbar() {
     <div className='navbar'>
       <ul>
         <li className='logo'>
-          <img src={Bug} alt='dojo logo' />
+          <img src={Bug} alt='bug logo' />
           <span>Bug Tracker</span>
         </li>
         <li>
