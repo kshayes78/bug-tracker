@@ -6,7 +6,7 @@ import './Login.css';
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { login, isPending, error } = useLogin();
+  const { login, error, isPending } = useLogin();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,7 +34,7 @@ export default function Login() {
           value={password}
         />
       </label>
-      {/* <button>login</button> */}
+
       {!isPending && <button className='btn'>Login</button>}
       {isPending && (
         <button className='btn' disabled>
